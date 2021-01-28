@@ -1,16 +1,8 @@
 /**
- * @brief Entry point of demo.
  *
- * The example shown below uses MQTT APIs to send and receive MQTT packets
- * over the TLS connection established using OpenSSL.
- *
- * The example is single threaded and uses statically allocated memory;
- * it uses QOS1 and therefore implements a retransmission mechanism
- * for Publish messages. Retransmission of publish messages are attempted
- * when a MQTT connection is established with a session that was already
- * present. All the outgoing publish messages waiting to receive PUBACK
- * are resent in this demo. In order to support retransmission all the outgoing
- * publishes are stored until a PUBACK is received.
+ * The code GET traffic data from TomTom API and publish it to AWS IoT core in every 60 seconds
+ * on MQTT protocol.
+ * The example is single threaded and uses statically allocated memory. It uses QOS0 for Publish messages.
  */
 #include <stdio.h>
 #include <string.h>

@@ -1,3 +1,12 @@
+/**
+ * @brief Entry point of project.
+ *
+ * This file starts the ESP32 in a AP mode and WIFI credentials are transferred through
+ * a mobile app. Then ESP32 switches to Station mode and start to connect to AWS.
+ *
+ * It also allows WiFi Credentials to be erased from ESP32 by pressing Boot button for 3 seconds.
+ */
+
 #include "esp_wifi.h"
 #include "esp_log.h"
 #include "nvs_flash.h"
