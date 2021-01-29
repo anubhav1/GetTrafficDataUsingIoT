@@ -10,13 +10,14 @@ This projects collects  traffic data of a random Paris street using TomTom REST 
 4. **AWS IoT Analytics** - To Anaylse Traffic Data
 5. **AWS Quicksight** - To Visualise Traffic Data
 
-# Visualize Data using AWS Quicksight
-![Screenshot](screenshot2.png)
 
 # Directories
 1. **AWS Resources Policy** :  Contains python boto3 script to deploy required AWS resources
-2. **main** : ESP32 Firmware
-3. **components** : ESP-IDF components required in this project
+2. **main** : ESP32 Firmware written using ESP-IDF Framework and FreeRTOS.
+3. **components** : ESP-IDF components required in this project.
+# Visualization of Data on AWS Quicksight
+![Screenshot](screenshot2.png)
+
 
 
 
