@@ -198,8 +198,6 @@ void aws_connect_task(void *param)
     esp_http_client_config_t config = 
     {
         .url = "https://api.tomtom.com/traffic/services/4/flowSegmentData/absolute/10/json?point=48.791672%2C2.344767&unit=KMPH&key=XXXXXXXXXXXXXXXX",
-        //.url = "https://api.tomtom.com/traffic/services/4/flowSegmentData/absolute/10/json?point=52.199834%2C11.241324&unit=KMPH&key=1Nah1nT5bQ8YmEZi79SSVEJcAHcp2Ucz",
-        //.url = "https://api.nomics.com/v1/currencies/ticker?key=dae62c0cbe870ac77d276830fa78ce10&ids=BTC&interval=1d,30d&convert=EUR&per-page=100&page=1",
         .method = HTTP_METHOD_GET,
         .event_handler = _http_event_handle,
         .user_data = local_response_buffer
